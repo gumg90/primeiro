@@ -40,6 +40,9 @@ function Main({navigation}){
                 </Callout>
             </Marker>
         </MapView>
+        <View style={styles.searchForm}>
+            
+        </View>
     )
 }
 
