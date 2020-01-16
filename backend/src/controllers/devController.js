@@ -34,7 +34,7 @@ module.exports = {
                 type: 'Point',
                 coordinates: [longitude, latitude],
             }
-            const Dev = await dev.create({
+                Dev = await dev.create({
                 github_user,
                 name,
                 avatar_url,
@@ -53,7 +53,6 @@ module.exports = {
                 $in: id,
             }
         })
-        console.log(Dev);
 
         return response.json(Dev);
     },
@@ -71,11 +70,9 @@ module.exports = {
                 $in: id,
             }
         }).updateOne({
-            Dev: id,
             techs: techsArrays,
             location,
         })
-        console.log(Dev);
 
         return response.json(Dev);
     }
