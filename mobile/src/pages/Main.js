@@ -26,6 +26,7 @@ function Main({navigation}){
         return null;
     }
     return (
+        <>
         <MapView initialRegion={currentRegion} style={styles.map}>
             <Marker coordinate={{latitude: -18.171815, longitude: -47.9627898}}>
                 <Image style={styles.avatar} source={{uri: 'https://avatars2.githubusercontent.com/u/23236871?s=460&v=4'}} />
@@ -41,9 +42,10 @@ function Main({navigation}){
             </Marker>
         </MapView>
         <View style={styles.searchForm}>
-            
+
         </View>
-    )
+        </>
+    );
 }
 
 const styles = StyleSheet.create({
